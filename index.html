@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta name="author" content="Francisca Palma, Paulo Monteiro, Rafael Silva, Rafael Nogueira, Rodrigo Oliveira">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Identificação de Plásticos - Início</title>
+    <script src="script/index.js" defer></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="wrapper">
+            <div id="left">
+                <a href="index.html" class="selected-menu-item">Plásticos</a>
+            </div>
+            <div id="right">
+                <a href="reciclagem.html">Reciclagem</a>
+                <a href="origem.html">Origem</a>
+                <a href="activity.html">Identificar</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="hero-container">
+        <div id="hero">
+            <div id="hero-elements">
+                <div id="hero-text-container">
+                    <p class="hero-text">Identifique os</p>
+                    <p id="hero-bold" class="">PLÁSTICOS</p>
+                    <p class="hero-text"> que utiliza</p>
+                </div>
+                <button class="txt-semibold"
+                    onclick="window.location.href ='activity.html';">Experimente</button>
+            </div>
+            <img id="hero-illustration" src="img/hero.svg" alt="ilustração herói">
+            <img src="./img/hero-ground.png" id="illustration-ground" alt="plataforma da ilustração herói">
+            <img src="./img/hero-bg.png" id="illustration-white" alt="fundo da ilustração herói">
+        </div>
+        <div style="background-color: white;">
+            <div id="plastic-types-container">
+                <div><img id="plastic-type-1" class="plastic-type-item" src="img/1pet.svg" alt="plático tipo 1 - PET">
+                </div>
+                <div><img id="plastic-type-2" class="plastic-type-item plastic-type-unselected" src="img/2pead.svg"
+                        alt="plático tipo 2 - PEAD">
+                </div>
+                <div><img id="plastic-type-3" class="plastic-type-item plastic-type-unselected" src="img/3pvc.svg"
+                        alt="plático tipo 3 - PVC">
+                </div>
+                <div><img id="plastic-type-4" class="plastic-type-item plastic-type-unselected" src="img/4pebd.svg"
+                        alt="plático tipo 4 - PEBD">
+                </div>
+                <div><img id="plastic-type-5" class="plastic-type-item plastic-type-unselected" src="img/5pp.svg"
+                        alt="plático tipo 5 - PP">
+                </div>
+                <div><img id="plastic-type-6" class="plastic-type-item plastic-type-unselected" src="img/6ps.svg"
+                        alt="plático tipo 6 - PS">
+                </div>
+                <div><img id="plastic-type-7" class="plastic-type-item plastic-type-unselected" src="img/7o.svg"
+                        alt="plático tipo 7 - O">
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="content-wrapper">
+        <section>
+            <header>
+                <p class="type" id="plastic-type-header">Politereftalato de etileno (PET)</p>
+                <p class="type-details" id="plastic-density-header">1,29 a 1,40 g/cm³</p>
+            </header>
+            <!-- h2 class="txt-semibold txt-color-azul2">O que se pode obter</h2 -->
+
+            <div class="item-options-container" id="options-1">
+                <div class="item-option">
+                    <img class="item-option-img" src="./img/garrafa.svg" alt="garrafa">
+                    <p class="txt-item">Garrafas</p>
+                </div>
+                <div class="item-option">
+                    <img class="item-option-img" src="./img/tapete.svg" alt="tapete">
+                    <p class="txt-item">Tapetes</p>
+                </div>
+                <div class="item-option">
+                    <img class="item-option-img" src="./img/embComida.svg" alt="embalagem de comida">
+                    <p class="txt-item">Embalagens de comida</p>
+                </div>
+            </div>
+            <div class="item-options-container" id="options-2">
+                <div class="item-option">
+                    <img class="item-option-img" src="./img/detergente.svg" alt="detergente">
+                    <p class="txt-item">Detergentes</p>
+                </div>
+                <div class="item-option">
+                    <img class="item-option-img" src="./img/brinquedo.svg" alt="brinquedo">
+                    <p class="txt-item">Brinquedos</p>
+                </div>
+            </div>
+            <div class="item-options-container" id="options-3">
+                <div class="item-option">
+                    <img class="item-option-img" src="./img/detergente.svg" alt="detergente">
+                    <p class="txt-item">Detergente</p>
+                </div>
+                <div class="item-option">
+                    <img class="item-option-img" src="./img/blisters.svg" alt="blisters">
+                    <p class="txt-item">Blisters</p>
+                </div>
+            </div>
+            <div class="item-options-container" id="options-4">
+                <div class="item-option">
+                    <img class="item-option-img" src="./img/sacos.svg" alt="sacos de supermercado">
+                    <p class="txt-item">Sacos de supermercado</p>
+                </div>
+                <div class="item-option">
+                    <img class="item-option-img" src="./img/utCozinha.svg" alt="utensílios de cozinha">
+                    <p class="txt-item">Utensílios de cozinha</p>
+                </div>
+            </div>
+            <div class="item-options-container" id="options-5">
+                <div class="item-option">
+                    <img class="item-option-img" src="./img/embComida.svg" alt="embalagem de comida">
+                    <p class="txt-item">Embalagens de comida</p>
+                </div>
+                <div class="item-option">
+                    <img class="item-option-img" src="./img/tampa.svg" alt="tampa de garrafa">
+                    <p class="txt-item">Tampas de garrafas</p>
+                </div>
+                <div class="item-option">
+                    <img class="item-option-img" src="./img/garrafa.svg" alt="garrafa">
+                    <p class="txt-item">Garrafas</p>
+                </div>
+            </div>
+            <div class="item-options-container" id="options-6">
+                <div class="item-option">
+                    <img class="item-option-img" src="./img/iogurte.svg" alt="iogurte">
+                    <p class="txt-item">Embalagens de iogurtes</p>
+                </div>
+                <div class="item-option">
+                    <img class="item-option-img" src="./img/cestoMercado.svg" alt="cesto de supermercado">
+                    <p class="txt-item">Cestos de supermercado</p>
+                </div>
+            </div>
+            <div class="item-options-container" id="options-7">
+                <div class="item-option">
+                    <img class="item-option-img" src="./img/brinquedo.svg" alt="brinquedo">
+                    <p class="txt-item">Brinquedos</p>
+                </div>
+            </div>
+            <p class="txt-size-normal" id="plastic-text">O PET, ou politereftalato de etileno, é um polímero
+                termoplástico que é amplamente utilizado na produção de embalagens, como garrafas, potes e sacos. É um
+                material leve, resistente e transparente, o que o torna ideal para o armazenamento de alimentos e
+                bebidas.<br>O PET é um polímero de condensação, o que significa que é formado pela reação entre dois
+                monômeros, o ácido
+                tereftálico (PTA) e o etilenoglicol (EG). A reação ocorre em duas etapas, com a formação de um
+                intermediário, o bisfenol A (BPA).<br>O PET pode ser reciclado, o que é importante para a redução da
+                poluição ambiental. O processo de reciclagem do PET consiste em três etapas:<br> - Separação: as
+                embalagens de PET são separadas de outros tipos de plásticos e contaminantes.<br> - Lavagem: as
+                embalagens são
+                lavadas para remover contaminantes.<br> - Reprocessamento: as embalagens são
+                reprocessadas para formar novos produtos, como garrafas, fios e tecidos.</p>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta name="author" content="Francisca Palma, Paulo Monteiro, Rafael Silva, Rafael Nogueira, Rodrigo Oliveira">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="./script/activity.js" defer></script>
+    <title>Identificação de Plásticos - Atividade</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="wrapper">
+            <div id="left">
+                <a href="index.html">Plásticos</a>
+            </div>
+            <div id="right">
+                <a href="reciclagem.html">Reciclagem</a>
+                <a href="origem.html">Origem</a>
+                <a href="activity.html" class="selected-menu-item">Identificar</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content-wrapper">
+        <section>
+            <h2>Prepare e misture as soluções</h2>
+            <div id="input-container">
+                <p class="txt-size-normal">Capacidade dos recipientes: </p>
+                <input id="mL-input" type="number" value="250">
+                <p class="txt-size-normal">mL</p>
+            </div>
+            <div class="activity-first-container">
+
+
+                <div id="activity-items-container">
+
+                    <ul id="activity-items">
+
+                        <li class="activity-item">
+                            <p class="activity-item-number">1</p>
+                            <div>
+                                <p class="activity-item-material">Água Destilada: <span
+                                        class="activity-item-amount" id="agua-1-value">250mL</span></p>
+                                <p class="activity-item-material">Cloreto de Sódio: <span
+                                        class="activity-item-amount" id="sal-1-value">89.5g</span></p>
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <p class="activity-item-number">2</p>
+                            <div>
+                                <p
+                                    class="activity-item-material activity-item-material-single">
+                                    Água Destilada: <span class="activity-item-amount" id="agua-2-value">250mL</span></p>
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <p class="activity-item-number">3</p>
+                            <div>
+                                <p class="activity-item-material">Água Destilada: <span
+                                        class="activity-item-amount" id="agua-3-value">122.5mL</span></p>
+                                <p class="activity-item-material">Álcool Etílico: <span
+                                        class="activity-item-amount" id="alcool-1-value">127.5mL</span></p>
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <p class="activity-item-number">4</p>
+                            <div>
+                                <p class="activity-item-material">Água Destilada: <span
+                                        class="activity-item-amount" id="agua-4-value">100mL</span></p>
+                                <p class="activity-item-material">Álcool Etílico: <span
+                                        class="activity-item-amount" id="alcool-2-value">150mL</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="activity-first-right">
+                    <div class="activity-image-container">
+                        <img src="img/sal.svg" style="width: 2.5rem; display: inline-block;margin-right: 1.2rem;"
+                            alt="saleiro">
+                        <img src="img/garrafaalcool.svg" style="width: 3rem;display: inline-block;margin-right: 1.2rem;"
+                            alt="garrafa de álcool">
+                        <img src="img/garrafaagua.svg" style="width: 2.5rem; display: inline-block; margin-right: 3rem;"
+                            alt="garrafa de água">
+                        <img src="img/gobele.svg" style="width: 7.5rem; display: inline-block;" alt="gobelé">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experiment">
+            <h2>Usando luvas, insira a amostra de plástico nos recipientes e mexa</h2>
+            <ul style="list-style-type: none;display:grid;grid-row-gap:1rem;">
+                <li id="activity-item1">
+                    <div class="during-activity-item-header">
+                        <div>
+                            <p class="activity-item-number">1</p>
+                            <div>
+                                <p class="activity-item-material">
+                                    Água Destilada e Cloreto de Sódio</p>
+                                <p class="activity-item-amount">1,2 g/dm³</p>
+                            </div>
+                        </div>
+                        <div class="during-activity-item-right" style="display:flex;">
+                            <button onclick="afunda(1)"
+                                class="during-activity-item-button afunda-button">Afunda</button>
+                            <button onclick="flutua(1)"
+                                class="during-activity-item-button flutua-button">Flutua</button>
+                        </div>
+                    </div>
+                    <div class="during-activity-item-content">
+                        <p class="txt-size-normal">Pode ser</p>
+
+
+                        <div class="solution">
+                            <div style="display:flex; align-items:center;">
+                                <img class="plastic-type-item img-result" src="./img/3pvc.svg">
+                                <p class="type">Policloreto de Vinilo</p>
+                            </div>
+                        </div>
+                        <p class="txt-size-normal">ou</p>
+                        <div class="solution">
+                            <div style="display:flex; align-items:center;">
+                                <img class="plastic-type-item img-result" src="./img/1pet.svg">
+                                <p class="type">Politereftalato de Etileno</p>
+                            </div>
+                        </div>
+
+                        <p class="txt-size-normal confirm-result"
+                            onclick="openGraphics(0,2)">Confirmar com espectrofotómetro</p>
+                        <div class="graphics-container">
+                            <p class="txt-size-normal">Confirme o resultado, comparando os gráficos abaixo com o resultado do seu espectrofotómetro</p>
+                            <p class="graphic-plastic-name">PET - Politeraftalato de etileno</p>
+                            <div>
+                                <button onclick="previousGraph()" class="graphics-button">
+                                    <span class="material-symbols-outlined">
+                                        arrow_back
+                                    </span>
+                                </button>
+                                <img src="img/pet-graph.png" class="graphic-image">
+
+                                <button onclick="nextGraph()" class="graphics-button"> <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li id="during-activity-divider1">
+                    <hr class="during-activity-divider">
+                </li>
+                <li id="activity-item2">
+                    <div class="during-activity-item-header">
+                        <div>
+                            <p class="activity-item-number">2</p>
+
+                            <div>
+                                <p class="activity-item-material">Água Destilada</p>
+                                <p class="activity-item-amount">1 g/dm³</p>
+                            </div>
+                        </div>
+                        <div class="during-activity-item-right-lock">
+                            <img class="lock" src="./img/lock.svg" alt="cadeado fechado">
+                        </div>
+                        <div class="during-activity-item-right">
+                            <button onclick="afunda(2)"
+                                class="during-activity-item-button afunda-button">Afunda</button>
+                            <button onclick="flutua(2)"
+                                class="during-activity-item-button flutua-button">Flutua</button>
+                        </div>
+                    </div>
+                    <div class="during-activity-item-content">
+                        <p class="txt-size-normal">Pode ser</p>
+
+                        <div class="solution">
+                            <div style="display:flex; align-items:center;">
+                                <img class="plastic-type-item img-result" src="./img/6ps.svg">
+                                <p class="type">Poliestireno</p>
+                            </div>
+                        </div>
+                        
+                            <p class="txt-size-normal confirm-result"
+                            onclick="openGraphics(1,5)">Confirmar com espectrofotómetro</p>
+                        <div class="graphics-container">
+                            <p class="txt-size-normal">Confirme o resultado, comparando os gráficos
+                                abaixo com o resultado do seu espectrofotómetro</p>
+                            <p class="graphic-plastic-name">PET - Politeraftalato de etileno</p>
+                            <div>
+                                <button onclick="previousGraph()" class="graphics-button">
+                                    <span class="material-symbols-outlined">
+                                        arrow_back
+                                    </span>
+                                </button>
+                                <img src="img/pet-graph.png" class="graphic-image">
+
+                                <button onclick="nextGraph()" class="graphics-button"> <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="during-activity-divider2">
+                    <hr class="during-activity-divider">
+                </li>
+                <li id="activity-item3">
+                    <div class="during-activity-item-header">
+                        <div>
+                            <p class="activity-item-number">3</p>
+
+                            <div>
+                                <p class="activity-item-material">Água Destilada e Cloreto de
+                                    Sódio
+                                </p>
+                                <p class="activity-item-amount">0,93 g/dm³</p>
+                            </div>
+                        </div>
+                        <div class="during-activity-item-right-lock">
+                            <img class="lock" src="./img/lock.svg" alt="cadeado fechado">
+                        </div>
+                        <div class="during-activity-item-right">
+                            <button onclick="afunda(3)"
+                                class="during-activity-item-button afunda-button">Afunda</button>
+                            <button onclick="flutua(3)"
+                                class="during-activity-item-button flutua-button">Flutua</button>
+                        </div>
+                    </div>
+                    <div class="during-activity-item-content">
+                        <p class="txt-size-normal">Pode ser</p>
+
+                        <div class="solution">
+                            <div style="display:flex; align-items:center;">
+                                <img class="plastic-type-item img-result" src="./img/2pead.svg">
+                                <p class="type">Polietileno de alta densidade</p>
+                            </div>
+    
+                        </div>
+                            <p class="txt-size-normal confirm-result"
+                            onclick="openGraphics(2,1)">Confirmar com espectrofotómetro</p>
+                        <div class="graphics-container">
+                            <p class="txt-size-normal">Confirme o resultado, comparando os gráficos
+                                abaixo com o resultado do seu espectrofotómetro</p>
+                            <p class="graphic-plastic-name">PET - Politeraftalato de etileno</p>
+                            <div>
+                                <button onclick="previousGraph()" class="graphics-button">
+                                    <span class="material-symbols-outlined">
+                                        arrow_back
+                                    </span>
+                                </button>
+                                <img src="img/pet-graph.png" class="graphic-image">
+
+                                <button onclick="nextGraph()" class="graphics-button"> <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="during-activity-divider3">
+                    <hr class="during-activity-divider">
+                </li>
+                <li id="activity-item4">
+                    <div class="during-activity-item-header">
+                        <div>
+                            <p class="activity-item-number">4</p>
+
+                            <div>
+                                <p class="activity-item-material">Água Destilada e Álcool Etílico
+                                </p>
+                                <p class="activity-item-amount">0,91 g/dm³</p>
+                            </div>
+                        </div>
+                        <div class="during-activity-item-right-lock">
+                            <img class="lock" src="./img/lock.svg" alt="cadeado fechado">
+                        </div>
+                        <div class="during-activity-item-right">
+                            <button onclick="afunda(4)"
+                                class="during-activity-item-button afunda-button">Afunda</button>
+                            <button onclick="flutua(4)"
+                                class="during-activity-item-button flutua-button">Flutua</button>
+                        </div>
+                    </div>
+                    <div class="during-activity-item-content" id="item-content1">
+                        <p class="txt-size-normal">Pode ser</p>
+
+
+                        <div class="solution">
+                            <div style="display:flex; align-items:center;">
+                                <img class="plastic-type-item img-result" src="./img/4pebd.svg">
+                                <p class="type">Polietileno de baixa
+                                    densidade</p>
+                            </div>
+                        
+                        </div>
+
+
+                       
+                            <p class="txt-size-normal confirm-result"
+                            onclick="openGraphics(3, 3)">Confirmar com espectrofotómetro</p>
+                        <div class="graphics-container">
+                            <p class="txt-size-normal">Confirme o resultado, comparando os gráficos
+                                abaixo com o resultado do seu espectrofotómetro</p>
+                            <p class="graphic-plastic-name">PET - Politeraftalato de etileno</p>
+                            <div>
+                                <button onclick="previousGraph()" class="graphics-button">
+                                    <span class="material-symbols-outlined">
+                                        arrow_back
+                                    </span>
+                                </button>
+                                <img src="img/pet-graph.png" class="graphic-image">
+
+                                <button onclick="nextGraph()" class="graphics-button"> <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="during-activity-item-content" id="item-content2">
+                        <p class="txt-size-normal">Pode ser</p>
+
+                        <div class="solution">
+                            <div style="display:flex; align-items:center;">
+                                <img class="plastic-type-item img-result" src="./img/5pp.svg">
+                                <p class="type">Polipropileno</p>
+                            </div>
+                            
+                        </div>
+
+
+                       
+                            <p class="txt-size-normal confirm-result"
+                            onclick="openGraphics(4,5)">Confirmar com espectrofotómetro</p>
+                        <div class="graphics-container">
+                            <p class="txt-size-normal">Confirme o resultado, comparando os gráficos
+                                abaixo com o resultado do seu espectrofotómetro</p>
+                            <p class="graphic-plastic-name">PET - Politeraftalato de etileno</p>
+                            <div>
+                                <button onclick="previousGraph()" class="graphics-button">
+                                    <span class="material-symbols-outlined">
+                                        arrow_back
+                                    </span>
+                                </button>
+                                <img src="img/pet-graph.png" class="graphic-image">
+
+                                <button onclick="nextGraph()" class="graphics-button"> <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -131,7 +131,7 @@ b {
     top: 0;
     z-index: 999;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     #navbar {
         font-size: 1rem;
     }
@@ -161,7 +161,7 @@ b {
     height: 100%;
     float: right;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     #right {
         gap: 1rem;
     }
@@ -189,28 +189,34 @@ b {
     display: grid;
     grid-template-rows: 75% 25%;
     width: 100%;
-    height: calc(10rem + 35vw);
+    height: calc(5rem + 25vw);
+
     background-color: var(--color-yellow);
 }
+@media (max-width: 768px) {
+    #hero-container {
 
+    }
+} 
 #hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 64vw;
-    margin: 0 auto;
+    height:100%;
+    margin: 5vw auto 0 auto;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     #hero {
-        width: 100vw;
-        margin: 0 1.5rem;
+        width: 85vw;
+        margin: 5vw 1.5rem 0 1.5rem;
     }
 } 
 
 #illustration-ground {
     position: absolute;
     right: 0;
-    bottom: 20%;
+    bottom: 0;
     width: 75%;
     height: 35%;
     z-index: 2;
@@ -230,6 +236,14 @@ b {
     flex-direction: column;
     gap: 0.3rem;
     padding: 0 0 2rem 0;
+
+}
+@media (max-width: 768px) {
+    #hero-text-container {
+        margin-top: 1rem;
+        gap: 0.25rem;
+        padding: 0 0 1rem 0;
+    }
 
 }
 
@@ -264,7 +278,11 @@ b {
     transform: scale(1);
     background-color: var(--color-yellow);
 }
-
+@media (max-width: 768px) {
+    #hero-elements>button {
+    padding: 0.5rem 0.75rem;
+    }
+} 
 #hero-elements>button:hover {
     transition: 0.3s;
     transform: scale(1.06);
@@ -274,14 +292,13 @@ b {
 #hero-illustration {
     transform: scale(1);
     transition: 0.3s;
-    width: calc(8rem + 20vw);
+    width: calc(4rem + 20vw);
     z-index: 3;
 }
 
 #hero-illustration:hover {
     transform: scale(1.03);
     transition: 0.3s;
-
 }
 
 #plastic-types-container {
@@ -292,7 +309,7 @@ b {
     margin: 0 auto;
 
 }
-@media (max-width:800px) {
+@media (max-width: 768px) {
     #plastic-types-container {
         width: 100%;
         justify-content: flex-start;
@@ -319,7 +336,7 @@ b {
 #plastic-types-container>*>img {
     width: calc(3rem + 3vw);
 }
-@media (max-width:800px) {
+@media (max-width: 768px) {
     #plastic-types-container>*>img {
         width: calc(2.75rem + 2.75vw);
         /*padding-right: 1rem;*/
@@ -364,7 +381,7 @@ b {
     /*min-height: 60vh;*/
 }
 
-@media (max-width:800px) {
+@media (max-width: 768px) {
     .content-wrapper {
         padding: 2rem 5vw;
     }

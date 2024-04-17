@@ -48,21 +48,21 @@ function changePlastic() {
     document.getElementById(this.id).classList.remove("plastic-type-unselected");
     console.log(nPlastico);
     console.log(document.getElementById("options-" + nPlastico));
-    document.getElementById("options-" + nPlastico).style.display = "flex";
+    document.getElementById("options-" + nPlastico).style.display = "flex"; // ????
 
     //não sei mas funciona para dar scroll e não ficar atrás da navbar :)
-    var element = document.getElementById('plastic-types-container');
+    /*var element = document.getElementById('plastic-types-container');
     var bodyRect = document.body.getBoundingClientRect().top;
     var elementRect = element.getBoundingClientRect().top;
     var elementPosition = elementRect - bodyRect;
 
-    window.scrollTo({ top: elementPosition });
+    window.scrollTo({ top: elementPosition });*/
 
 
 }
 function allUnselected() {
     for (var i = 1; i <= 7; i++) {
         document.getElementById("plastic-type-" + i).classList.add("plastic-type-unselected");
-        document.getElementById("options-" + i).style.display = "none";
+        document.getElementById("options-" + i).style.display = "none"; // ????
     }
 }

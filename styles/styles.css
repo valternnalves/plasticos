@@ -451,6 +451,7 @@ b {
 @media (max-width: 576px) {
     .activity-item {
         flex-wrap: no-wrap;
+        padding-bottom: 0rem;
     }
 }
 .activity-item>div {
@@ -670,11 +671,30 @@ b {
     align-items: baseline;
     justify-content: right;
 }
+@media (max-width: 576px) {
+    .activity-image-container-single {
+        /*display: none;*/
+    }
+}
 .activity-image-single {
     display: inline-block;
     margin-right: 1.2rem;
     max-height: 6.5rem;
 }
+.small-only {
+    display: none;
+}
+@media (max-width: 576px) {
+    .small-only {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: left;
+        margin-left: 2.5rem;
+        padding-bottom: 0.5rem; 
+    }
+}
+
 .saleiro {
     height: 3rem;
 }
@@ -689,16 +709,16 @@ b {
 }
 @media (max-width: 576px) {
     .saleiro {
-        height: calc(0.5 *3rem);
+        height: calc(.75 *3rem);
     }
     .alcool {
-        height: calc(0.5 *6rem); 
+        height: calc(.75 *6rem); 
     }
     .garrafa {
-        height: calc(0.5 *6.5rem); 
+        height: calc(.75 *6.5rem); 
     }
     .gobele {
-        height: calc(0.5 *5rem); 
+        height: calc(.75 *5rem); 
     }
 }
 
@@ -715,13 +735,14 @@ b {
     float: right;
     justify-content: flex-end;
 }
-/*@media (max-width: 576px) {
-    .go-right{
-        margin-righ: auto;
+@media (max-width: 576px) {
+    .go-right {
+        display: none !important;
+        /*margin-righ: auto;
         float: left;
-        justify-content: flex-start;
+        justify-content: flex-start;*/
     }
-} */
+}
 
 #experiment {
     /*margin-top:6rem;*/

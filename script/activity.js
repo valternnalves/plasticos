@@ -38,13 +38,11 @@ function resetItems(i) {
             document.getElementById("activity-item" + j).style.backgroundColor = "#ffffff";
             document.getElementById("activity-item" + j).querySelector(".during-activity-item-right").style.display = "none";
             document.getElementById("activity-item" + j).querySelector(".during-activity-item-right-lock").style.display = "flex";
-            if (j == 4) {
-                document.getElementById("item-content1").style.display = "none";
-                document.getElementById("item-content2").style.display = "none";
-            }
         }
-
-
+        if (j == 4) {
+            document.getElementById("item-content1").style.display = "none";
+            document.getElementById("item-content2").style.display = "none";
+        }
     }
 }
 

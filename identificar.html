@@ -11,7 +11,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <!--link rel="manifest" href="/site.webmanifest"-->
     <title>Identificação de Plásticos - Identificar</title>
-    <script src="script/index.js" defer></script>
+        
+    <script src="./script/activity.js" defer></script>
+
 </head>
 
 
@@ -31,14 +33,13 @@
 
     <main class="content-wrapper">
         <section>
-            <h2>Prepare e misture as soluções</h2>
+            <h2>Prepare as soluções</h2>
             <div id="input-container">
                 <p class="txt-size-normal">Capacidade dos recipientes: </p>
                 <input id="mL-input" type="number" value="250">
                 <p class="txt-size-normal">mL</p>
             </div>
             <div class="activity-first-container">
-
 
                 <div id="activity-items-container">
 
@@ -49,39 +50,67 @@
                             <div>
                                 <p class="activity-item-material">Água Destilada: <span
                                         class="activity-item-amount" id="agua-1-value">250mL</span></p>
-                                <p class="activity-item-material">Cloreto de Sódio: <span
-                                        class="activity-item-amount" id="sal-1-value">89.5g</span></p>
+                                <p class="activity-item-material">Cloreto de Sódio: <span class="activity-item-amount" id="sal-1-value">89.5g</span></p>
+                                    <div class="activity-first-right">
+                                        <div class="activity-image-container-single">
+                                            <img class="activity-image-single garrafa" src="img/garrafaagua.svg" alt="garrafa de água">
+                                            <img class="activity-image-single saleiro" src="img/sal.svg" alt="saleiro">                    
+                                            <img class="activity-image-single gobele" src="img/gobele.svg" alt="gobelé">
+                                        </div>
+                                    </div>
                             </div>
                         </li>
                         <li class="activity-item">
                             <p class="activity-item-number">2</p>
                             <div>
-                                <p
-                                    class="activity-item-material activity-item-material-single">
-                                    Água Destilada: <span class="activity-item-amount" id="agua-2-value">250mL</span></p>
+                                 <p class="activity-item-material">Água Destilada: <span
+                                        class="activity-item-amount" id="alcool-2-value">150mL</span></p>
+                                <p class="activity-item-material">Álcool Etílico: <span
+                                        class="activity-item-amount" id="agua-4-value">100mL</span></p>
+                               
+                                    <div class="activity-first-right">
+                                        <div class="activity-image-container-single">
+                                            <img class="activity-image-single garrafa" src="img/garrafaagua.svg" alt="garrafa de água">
+                                            <img class="activity-image-single alcool" src="img/garrafaalcool.svg" alt="garrafa de álcool">
+                                            <img class="activity-image-single gobele" src="img/gobele.svg" alt="gobelé">
+                                        </div>
+                                    </div>
                             </div>
                         </li>
                         <li class="activity-item">
                             <p class="activity-item-number">3</p>
                             <div>
                                 <p class="activity-item-material">Água Destilada: <span
-                                        class="activity-item-amount" id="agua-3-value">122.5mL</span></p>
-                                <p class="activity-item-material">Álcool Etílico: <span
                                         class="activity-item-amount" id="alcool-1-value">127.5mL</span></p>
+                                <p class="activity-item-material">Álcool Etílico: <span
+                                        class="activity-item-amount" id="agua-3-value">122.5mL</span></p>
+                                
+                                    <div class="activity-first-right">
+                                        <div class="activity-image-container-single">
+                                            <img class="activity-image-single garrafa" src="img/garrafaagua.svg" alt="garrafa de água">
+                                            <img class="activity-image-single alcool" src="img/garrafaalcool.svg" alt="garrafa de álcool">
+                                            <img class="activity-image-single gobele" src="img/gobele.svg" alt="gobelé">
+                                        </div>
+                                    </div>
                             </div>
                         </li>
                         <li class="activity-item">
                             <p class="activity-item-number">4</p>
                             <div>
-                                <p class="activity-item-material">Água Destilada: <span
-                                        class="activity-item-amount" id="agua-4-value">100mL</span></p>
-                                <p class="activity-item-material">Álcool Etílico: <span
-                                        class="activity-item-amount" id="alcool-2-value">150mL</span></p>
+                                <p
+                                    class="activity-item-material activity-item-material-single">
+                                    Água Destilada: <span class="activity-item-amount" id="agua-2-value">250mL</span></p>
+                                    <div class="activity-first-right">
+                                        <div class="activity-image-container-single">
+                                            <img class="activity-image-single garrafa" src="img/garrafaagua.svg" alt="garrafa de água">
+                                            <img class="activity-image-single gobele" src="img/gobele.svg" alt="gobelé">
+                                        </div>
+                                    </div>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div class="activity-first-right">
+                <!--div class="activity-first-right">
                     <div class="activity-image-container">
                         <img src="img/sal.svg" style="width: 2.5rem; display: inline-block;margin-right: 1.2rem;"
                             alt="saleiro">
@@ -91,7 +120,7 @@
                             alt="garrafa de água">
                         <img src="img/gobele.svg" style="width: 7.5rem; display: inline-block;" alt="gobelé">
                     </div>
-                </div>
+                </div-->
             </div>
         </section>
         <section id="experiment">

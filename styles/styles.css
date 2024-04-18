@@ -643,6 +643,29 @@ b {
     justify-content: center;
 }
 
+.activity-image-container-single {
+    /*display: flex;
+    align-items: baseline;
+    justify-content: center;*/
+    /*max-height: 4rem;*/
+}
+.activity-image-single {
+    display: inline-block;
+    margin-right: 1.2rem;
+}
+.saleiro {
+    height: 3rem; 
+}
+.alcool {
+    height: 6rem; 
+}
+.garrafa {
+    height: 6.5rem; 
+}
+.gobele {
+    height: 5rem; 
+}
+    
 .activity-first-container {
     display: flex;
     justify-content: space-between;

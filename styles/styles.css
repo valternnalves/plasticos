@@ -512,7 +512,7 @@ b {
 
 #experiment button{
     padding: 0.5rem;
-    height: 2rem;
+    max-height: 2.25rem;
 }
 .during-activity-item-button {
     background-color: var(--color-yellow);
@@ -836,6 +836,15 @@ b {
     color:var(--color-yellow);
     font-size: 2rem;
 }
+
+.arrow-span {
+    display: flex;
+    align-self: center;
+}
 .arrow-icon {
+    width: 1.5rem;
+}
+@media (max-width: 576px) {
+    .arrow-icon {
     width: 1rem;
 }
